@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Alabastro - Barbearia</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="carrinho.html">
+</head>
+<script>
+    function AddCarrinho(produto, qtd, valor, posicao) {
+        localStorage.setItem("produto" + posicao, produto);
+        localStorage.setItem("qtd" + posicao, qtd);
+        valor = valor * qtd;
+        localStorage.setItem("valor" + posicao, valor);
+        alert("Produto adicionado ao carrinho!");
+    }
+</script>
+
+<body>
+    <header id="home">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> para importar uma fonte com link -->
+        <div class="caixa">
+            <div class="menubar"></div>
+            <h1><img src="imagens/logo.png" class="logo1" alt="Logo da barbearia "loading="lazy"></h1>
+            <nav>
+                <ul class="menuoption">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#mapa">Localização</a></li>
+                    <a href="carrinho.php"><img src="imagens/carrinho.png" class="carrinho"></a></li>
+                </ul>
+                <div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h3>Sobre a Barbearia:</h3>
+            <p>Localizada na zona norte de São Paulo, a barbearia Alabastro traz para o mercado o que há de melhor para
+                seu cabelo e barba. Nossa missão é Proporcionar auto-estima e qualidade de vida aos clientes. O
+                atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos
+                clientes. </p>
+            <img src="imagens/beneficios.jpg" class="beneficiosjpg">
+        </section>
+        <section id="produtos">
+            <h3>Nossos Serviços</h3>
+            <ul class="products">
+                <li>
+                    <h2>Cabelo</h2>
+                    <img src="imagens/cabelo.jpg">
+                    <p class="desc">Na tesoura ou máquina, como o cliente preferir</p>
+                    <p class="preco">R$ 35,00 </p>
+                    <div>
+                        qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+                        <button type="button" id="adicionar1" id="produto1"
+                            onclick="AddCarrinho('Cabelo', document.getElementById('qtd1').value, '35.00', 1)">
+                            Adicionar ao carrinho
+                        </button>
+                    </div>
+
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="imagens/barba.jpg">
+                    <p class="desc">Corte e desenho profissional de barba</p>
+                    <p class="preco">R$ 25,00</p>
+                    <div>
+                        qtd: <input type="number" value="1" min="1" max="10" id="qtd2">
+                        <button type="button" id="adicionar1" id="produto1"
+                            onclick="AddCarrinho('Barba', document.getElementById('qtd2').value, '25.00', 2)"> Adicionar
+                            ao carrinho
+                        </button>
+                    </div>
+
+
+                </li>
+                <li>
+                    <h2>Cabelo + Barba</h2>
+                    <img src="imagens/cabelo+barba.jpg">
+                    <p class="desc">Pacote completo de cabelo e barba</p>
+                    <p class="preco">R$ 50,00</p>
+                    <div>
+                        qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
+                        <button type="button" id="adicionar1" id="produto1"
+                            onclick="AddCarrinho('Cabelo + Barba', document.getElementById('qtd3').value, '50.00', 3)">
+                            Adicionar
+                            ao carrinho
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </section>
+        <section id="mapa">
+            <h3>Localização</h3>
+            <p> A barbearia Alabastro está na R. Gipóia, 86A - Vila Guilherme, São Paulo - SP, 02050-050 </p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.4722262906607!2d-46.61313138518946!3d-23.515512084705716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c272feac7f%3A0x7b7e6fd0fe4b475a!2sAlabastro%20Barbearia!5e0!3m2!1spt-BR!2sbr!4v1669033532425!5m2!1spt-BR!2sbr"
+                width="100%" height="450" style="border:0;" allowfullscreen=""></iframe>
+
+        </section>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Terça</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quinta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>10h ~ 16h</td>
+                </tr>
+            </tbody>
+
+
+
+
+        </table>
+        </section>
+    </main>
+
+    <footer>
+        <img id="logofo" src="imagens/logo.png" alt="logo da barbearia Alabastro">
+
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+
+</html>

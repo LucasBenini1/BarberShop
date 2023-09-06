@@ -1,0 +1,398 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+
+
+header {
+    background: url(imagens/slider2.jpg);
+    height: 100vh;
+    width: 100%;
+}
+
+.logo1 {
+    width: 82px;
+    position: fixed;
+    left: 10%;
+}
+
+.carrinho {
+    width: 35px;
+    position: fixed;
+    right: 15%;
+
+}
+
+#carrinho-compras {
+    width: 30%;
+    margin: 0 8%;
+    font-weight: bold;
+    font-size: 1.66em;
+    margin-bottom: 5px;
+    /* margem p baixo */
+    border-bottom: 1px solid #c78c19;
+
+}
+
+#calendario {
+    margin-left: 1.8%;
+}
+
+.menubar {
+    background: gray;
+    width: 100%;
+    height: 14%;
+    opacity: 0.5;
+    position: fixed;
+    top: 0px;
+    border-bottom: 1px solid #c78c19;
+}
+
+.menubar:hover {
+    opacity: 0.8;
+    transition: 1s opacity;
+}
+
+
+nav {
+    position: fixed;
+    /*  */
+    right: 20%;
+    top: 50px;
+}
+
+nav li {
+    display: inline;
+    /* deixa texto alinhado vertical */
+    margin: 0 0 0 15px;
+    /* margem das letras */
+}
+
+nav a {
+    text-transform: uppercase;
+    /* texto maiusculo */
+    color: black;
+    font-weight: bold;
+    font-size: 1.22em;
+    text-decoration: none;
+    /* tira os sublinhados */
+
+}
+
+nav a:hover {
+    /* hover = muda logo quando mouse estiver em cima do a em nav */
+    color: #C78C19;
+    text-decoration: overline;
+}
+
+/* ----------------------- main ----------------------- */
+
+main {
+    width: 1200px;
+    /* tamanho da lista na pagina */
+    margin: 0px auto;
+    /* 0 cima/baixo e auto = ajusta dependendo do tamanho da tela */
+}
+
+/* ----------------------- SOBRE ----------------------- */
+
+#sobre,
+#produtos,
+#contato,
+#mapa {
+    padding: 150px 0;
+    border-bottom: 1px dotted #C78C19;
+}
+
+h3 {
+    width: 30%;
+    margin: 0 8%;
+    font-weight: bold;
+    font-size: 1.66em;
+    margin-bottom: 5px;
+    /* margem p baixo */
+    border-bottom: 1px solid #c78c19;
+
+}
+
+#sobre p {
+    display: inline-block;
+    text-align: justify-all;
+    width: 30%;
+    margin: 0px 8%;
+    font-size: 1.34em;
+    letter-spacing: 1px;
+    color: #7d7d7d;
+}
+
+.beneficiosjpg {
+    vertical-align: bottom;
+    width: 50%
+        /* float: left; faria a imagem levantar e o texto ficar em volta */
+}
+
+/* ----------------------- PRODUTOS ----------------------- */
+
+
+
+.products li {
+    display: inline-block;
+    /* bloco alinhado vertical */
+    text-align: center;
+    /* centraliza texto */
+    width: 30%;
+    /* 30% do tamanho da pagina */
+    vertical-align: top;
+    /* alinha bloco p cima */
+    margin: 2% 1.5%;
+    /* margem do bloco */
+    padding: 30px 20px;
+    /* margem interna do bloco */
+    box-sizing: border-box;
+    /* caixa respeita a procentagem da pag */
+    border: 2px solid #000000;
+    /* tamanho, tipo e cor */
+    border-radius: 10px;
+    /* arredonda os cantos */
+}
+
+.products li:hover {
+    border-color: #C78C19;
+}
+
+.products li:hover h2 {
+    font-size: 1.77em;
+}
+
+.products li:active {
+    /* quando clica o mouse */
+    border-color: #ffdb96;
+}
+
+
+h2 {
+    font-weight: bold;
+    font-size: 1.66em;
+    margin-bottom: 5px;
+    /* margem p baixo */
+}
+
+.desc {
+    font-size: 1em;
+    color: #7d7d7d;
+    height: 36px;
+}
+
+.preco {
+    font-size: 1.22em;
+    /* tamanho fonte */
+    font-weight: bold;
+    /* tipo de fonte */
+    margin-top: 10px;
+    /* margem acima */
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+/* ----------------------- Mapa ----------------------- */
+
+#mapa p {
+    margin: 0px 5%;
+    padding: 2em;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #7d7d7d;
+    text-align: center;
+
+}
+
+
+/* ----------------------- CONTATO ----------------------- */
+
+form {
+    margin: 20px 0;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 1.11;
+    margin: 0 0 10px;
+    padding: 10px 25px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 25px 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.enviar:hover {
+    background: #C78C19;
+    color: white;
+    transition: 2s all
+}
+
+table {
+    margin: 20px 2em 40px 2em;
+    padding: 10px;
+}
+
+thead {
+    background: #555555;
+    font-weight: bold;
+    color: white;
+}
+
+td {
+    border-bottom: 1px solid #C78C19;
+    padding: 8px 15px;
+}
+
+select {
+    margin: 2em;
+}
+
+/* ----------------------- RODAPE ----------------------- */
+
+footer {
+    text-align: center;
+    background: url(imagens/bg.jpg);
+    /* insere uma imagem no css */
+    padding: 40px 0;
+
+}
+
+/* dispositivos moveis */
+
+@media screen and (max-width: 480px) {
+
+    .caixa,
+    #sobre,
+    #produtos,
+    #mapa,
+    #contato,
+    .menuoption,
+    main {
+        width: auto;
+    }
+
+
+
+    header {
+        height: 100%;
+        background-size: 100%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .menuoption {
+
+        text-align: center;
+        background: #000000;
+
+    }
+
+    nav {
+        position: sticky;
+        display: block;
+        font-size: x-small;
+        text-align: center;
+        width: auto;
+
+    }
+
+    .menubar {
+        position: relative;
+    }
+
+    .logo1 {
+        position: sticky;
+    }
+
+    .products li {
+        display: block;
+        width: auto;
+    }
+
+    #sobre p {
+        display: block;
+        width: auto;
+        margin: 1em 1em;
+    }
+
+    .beneficiosjpg {
+        vertical-align: bottom;
+        width: 100%;
+    }
+}
+
+h3 {
+    text-align: center;
+}
+
+#sobre,
+#produtos,
+#contato,
+#mapa {
+    padding: 2em 0;
+}
+
+table,
+h3 {
+    margin: auto;
+}
+
+.enviar {
+    margin: 0 0 0 2em;
+}
+
+#hora {
+    color: black;
+}
+
+#logofo {
+    width: 80px;
+}
+#logo2{
+    text-align: center;
+    width: 100px;
+}
+
+#carrinho1{
+    width: 30%;
+    margin-left: 36%;
+    font-weight: bold;
+    font-size: 1.66em;
+    /* margem p baixo */
+    border-bottom: 1px solid #c78c19;
+    text-align: center;
+}
+#adicionar1{
+    font: normal 11pt Arial;
+}

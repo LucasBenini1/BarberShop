@@ -1,0 +1,25 @@
+form {
+    display: inline-block;
+    /* bloco alinhado vertical */
+    text-align: center;
+    /* centraliza texto */
+    width: 50%;
+    /* 30% do tamanho da pagina */
+    vertical-align: top;
+    /* alinha bloco p cima */
+    margin: 2% 1.5%;
+    /* margem do bloco */
+    padding: 30px 20px;
+    /* margem interna do bloco */
+    box-sizing: border-box;
+    /* caixa respeita a procentagem da pag */
+    border: 5px solid #000000;
+    /* tamanho, tipo e cor */
+    border-radius: 10px;
+    /* arredonda os cantos */
+    color: black;
+}
+
+body {
+    text-align: center;
+}
