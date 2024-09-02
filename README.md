@@ -1,7 +1,7 @@
 # Barbearia Alabastro
 
 ## Tecnologias
-HTML, CSS, JavaScript e PHP.
+HTML, CSS, JavaScript, PHP e MySQL.
 
 ## Descrição
 Projeto acadêmico feito para universidade, onde foi feito uma página de uma barbearia.
